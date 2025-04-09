@@ -5,7 +5,7 @@ export default ({inputType, tag}) => {
         placeholder={tag}
         className="
             w-full
-            p-4 bg-[rgb(18,18,20)]
+            p-3 bg-[rgb(18,18,20)]
             rounded-lg
             text-white
             outline-none

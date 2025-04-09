@@ -3,6 +3,7 @@ import CardTransaction from './components/CardTransaction'
 import './App.css'
 import InputField from './components/InputField'
 import Button from './components/Button'
+import TableItem from './components/TableItem'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <header className="bg-[rgb(18,18,20)] px-37 pb-29.5 pt-10 flex items-center justify-between font-roboto">
       <img src="https://dtmoney-2-jfernandesdev.vercel.app/assets/logo.1c8c797f.svg" alt="Logo" className="h-10.5" />
       <Button
+        paddingX="px-5"
         text="Nova transação"
       />
     </header>
@@ -39,11 +41,19 @@ function App() {
         />
         <Button
           text={'Buscar'}
+          icon={<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="116" cy="116" r="84" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="175.4" y1="175.4" x2="224" y2="224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>}
           bgColor={'transparent'}
           textColor={'text-[rgb(0,179,126)]'}
           borderColor={'border border-[rgb(0,135,95)]'}
         />
       </form>
+      <table className='w-full my-8 '>
+        <tbody className='text-white flex flex-col gap-2'>
+          <TableItem />
+          <TableItem />
+          <TableItem />
+        </tbody>
+      </table>
     </main>
   </>)
 }
