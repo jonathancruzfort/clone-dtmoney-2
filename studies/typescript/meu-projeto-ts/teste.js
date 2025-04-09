@@ -1,0 +1,7 @@
+var nome = "Maria";
+var idade = 25;
+// console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
+var qualquerCoisa = "Texto"; // Pode ser qualquer coisa (não recomendado)
+console.log(qualquerCoisa);
+qualquerCoisa = 123; // Isso é permitido, mas pode gerar erros
+console.log(qualquerCoisa);
