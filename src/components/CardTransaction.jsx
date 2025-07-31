@@ -7,7 +7,7 @@ export default ({ title, icon, value, bgColor }) => {
         <span className="text-[rgb(196,196,204)]">{title}</span>
         <img src={icon} alt={title} className="w-8 h-8" />
       </div>
-      <span className="text-white text-[32px] font-semibold mt-2">{value}</span>
+      <span className="text-white text-[32px] font-semibold mt-2">{value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
     </div>
   )
 }

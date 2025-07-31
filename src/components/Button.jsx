@@ -1,19 +1,26 @@
-export default ({ text, bgColor, textColor, borderColor, icon, paddingX }) => {
+export default ({
+    text,
+    bgColor,
+    textColor,
+    borderColor,
+    icon,
+    paddingX,
+    hoverBg }) => {
     return <button
         className={`
             ${bgColor || 'bg-[rgb(0,135,95)]'}
             ${textColor || 'text-white'}
             ${borderColor || 'border-none'}
-            ${paddingX || 'px-4'}
+            ${paddingX || 'px-[20px]'}
+            ${hoverBg || 'hover:bg-[rgb(0,179,126)]'}
             text-md
             flex
             items-center
             justify-between
             gap-2
             font-bold
-            h-12.5
+            py-3.5
             rounded-md
-            hover:bg-[rgb(0,179,126)]
             hover:text-white
             transition-colors
             duration-200
